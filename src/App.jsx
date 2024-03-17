@@ -1,19 +1,27 @@
+import { TbActivityHeartbeat } from "react-icons/tb";
 function App() {
   return (
     <div>
       <header>
-        <img src="src/assets/react-core-concepts.png" alt="Stylized atom" />
-        <h1>Health Up</h1>
+        <div>
+          <h1>
+            Health Up <TbActivityHeartbeat color="40deg" />
+          </h1>
+
+          {/* I deleted this logo for now
+          <img src="src/assets/Logo1.jpg" alt="Stylized atom" />*/}
+        </div>
         <p>
-          Fundamental React concepts you will need for almost any app you are
-          going to build!
+          Focus on the 3 main aspects of your health: mental health, fitness,
+          diet !
         </p>
       </header>
       <main>
-        <h2>Time to get started!</h2>
+        <h2>Login</h2>
       </main>
     </div>
   );
 }
+//!!
 
 export default App;
