@@ -4,22 +4,75 @@
   box-sizing: border-box;
 }
 
+header {
+  margin: 0;
+}
+
+.nav {
+  background-color: rgb(184, 189, 192);
+  /*color: linear-gradient(40deg, #00ff59, #692cd9, #03d5ff, #1adb81);*/
+  color: radial-gradient(#35ccdf, #90de51);
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  padding: 0;
+}
+.nav b {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 3rem;
+  padding-left: 1.7rem;
+  background: linear-gradient(
+    40deg,
+    #44a9c0,
+    #08849d,
+    #4ac7d2,
+    rgb(192, 181, 172)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.5));
+}
+.nav ul {
+  padding: 3;
+  margin: 2;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav a {
+  color: #14938d;
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  font-size: 1.7rem;
+}
+
+.nav li:hover {
+  background-color: #e24855;
+}
+.nav li.active {
+  background-color: #2132ce;
+}
 html {
   font-family: "Quicksand", sans-serif;
-  line-height: 1.5;
+  background: radial-gradient(#14938d, #b5c3d9);
+  line-height: 1;
 
   color: #ebe7ef;
-  background: radial-gradient(#0a1548, #042c3d);
 
   font-synthesis: none;
-  text-rendering: optimizeLegibility;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
   min-height: 80rem;
 }
 
-header {
+/*header {
   text-align: center;
   margin: 3rem 0;
 }
@@ -28,14 +81,13 @@ header img {
   height: 5rem;
   width: 7rem;
   object-fit: cover;
-  background: linear-gradient(40deg, #00ff59, #692cd9, #03d5ff, #1adb81);
 }
 
 header h1 {
   margin: 0;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 5rem;
-  background: linear-gradient(40deg, #00ff59, #692cd9, #03d5ff, #1adb81);
+  background: linear-gradient(40deg, #44a9c0, #692cd9, #03d5ff, #1adb81);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.5));
@@ -47,16 +99,11 @@ header p {
   color: #8964b0;
   font-family: "Roboto Condensed", sans-serif;
 }
+*/
 
-main {
-  width: 90%;
-  max-width: 50rem;
-  margin: auto;
-}
-
-#core-concepts {
+/* #core-concepts {
   padding: 2rem;
-  border-radius: 6px;
+  border-radius: 10px;
   background-color: #140524;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
@@ -149,3 +196,5 @@ main h2 {
 #tab-content code {
   font-size: 1rem;
 }
+
+*/
