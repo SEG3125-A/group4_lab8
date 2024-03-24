@@ -8,6 +8,7 @@ header {
   margin: 0;
 }
 
+/* Navigation Bar */
 .nav {
   background-color: rgb(184, 189, 192);
   /*color: linear-gradient(40deg, #00ff59, #692cd9, #03d5ff, #1adb81);*/
@@ -16,6 +17,8 @@ header {
   align-items: center;
   gap: 2.4rem;
   padding: 0;
+  border-radius: 23px;
+  box-shadow: 10px 10px 30px rgba(85, 110, 232, 0.1);
 }
 .nav b {
   font-family: "Roboto Condensed", sans-serif;
@@ -48,18 +51,23 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
-  font-size: 1.7rem;
+  font-size: 1.85rem;
 }
 
-.nav li:hover {
-  background-color: #e24855;
-}
 .nav li.active {
+  border-radius: 23px;
+  box-shadow: 10px 10px 30px rgba(85, 110, 232, 0.1);
   background-color: #2132ce;
 }
+.nav li:hover {
+  border-radius: 23px;
+  background-color: #ebe0e1;
+}
+
+/* basics */
 html {
   font-family: "Quicksand", sans-serif;
-  background: radial-gradient(#14938d, #b5c3d9);
+  background: radial-gradient(#14938d, #ca4c1a, #142793);
   line-height: 1;
 
   color: #ebe7ef;
@@ -71,6 +79,83 @@ html {
   -webkit-text-size-adjust: 100%;
   min-height: 80rem;
 }
+/*body for the dashboard*/
+body {
+  padding-top: 1rem;
+  flex-direction: row;
+}
+
+/* Dashboard */
+.dasht {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.dash {
+  display: flex; /* Make the .dash element a flex container */
+  flex-direction: column; /* Arrange items in a column */
+  background-color: rgb(184, 189, 192);
+  /*color: linear-gradient(40deg, #00ff59, #692cd9, #03d5ff, #1adb81);*/
+  align-items: center;
+  gap: 2.4rem;
+  border-radius: 23px;
+  box-shadow: 10px 10px 30px rgba(85, 110, 232, 0.1);
+}
+
+.dash b {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 2rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  background: rgba(165, 86, 29, 0.842);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.5));
+}
+
+.dash ul {
+  flex-direction: column;
+  padding: 1;
+  margin: 1;
+  list-style: none;
+  display: flex;
+}
+
+.dash a {
+  color: #14938d;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  padding-right: 2rem;
+  font-size: 2rem;
+}
+
+.dash c {
+  color: #1f81c3;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  padding-bottom: 3rem;
+  font-size: 1.5rem;
+}
+/*I took them off because we dont need the hover for now*/
+/*.dash li.active {
+  border-radius: 23px;
+  box-shadow: 10px 10px 30px rgba(85, 110, 232, 0.1);
+  background-color: #2132ce;
+}
+
+
+.dash li:hover {
+  border-radius: 23px;
+  background-color: #ebe0e1;
+}*/
 
 /*header {
   text-align: center;

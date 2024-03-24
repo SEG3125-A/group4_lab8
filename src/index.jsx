@@ -1,4 +1,5 @@
 import ReactDOM from "react-dom/client";
+import { CgMonday } from "react-icons/cg";
 
 import App from "./App.jsx";
 import "./index.css";

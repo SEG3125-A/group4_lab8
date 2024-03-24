@@ -7,7 +7,7 @@ export default function Navbar() {
         Health Up <TbActivityHeartbeat color="#44a9c0" />
       </b>
       <ul>
-        <li>
+        <li className="active">
           <a href="/Dashboard">Dashboard</a>
         </li>
         <li>
