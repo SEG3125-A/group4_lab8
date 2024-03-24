@@ -1,9 +1,8 @@
-import { TbActivityHeartbeat } from "react-icons/tb";
+import ShooseFitness from "./pages/ShooseFitness";
 import Navbar from "./Components/Navbar";
 import Dashboard from "./pages/DashBoard";
-import MyFitStatus from "./Components/MyFitStatus";
-import MyNutritionStatus from "./Components/MyNutritionStatus";
-import MyMHStatus from "./Components/MyMHStatus";
+import ShooseNutri from "./pages/ShooseNutri";
+import ShooseMH from "./pages/ShooseMH";
 
 function App() {
   return (
@@ -14,6 +13,9 @@ function App() {
 
       <body>
         <Dashboard />
+        <ShooseFitness />
+        <ShooseNutri />
+        <ShooseMH />
       </body>
     </div>
   );
