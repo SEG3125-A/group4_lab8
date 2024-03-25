@@ -10,13 +10,13 @@ export default function Navbar() {
         <li className="active">
           <a href="/Dashboard">Dashboard</a>
         </li>
-        <li>
+        <li className="/">
           <a href="/FitnessCoaches">Fitness Coaches</a>
         </li>
-        <li>
+        <li className="/">
           <a href="/MentalHealthSpecialists">Mental Health Specialists</a>
         </li>
-        <li>
+        <li className="/">
           <a href="/Nutritionists">Nutritionists</a>
         </li>
       </ul>
